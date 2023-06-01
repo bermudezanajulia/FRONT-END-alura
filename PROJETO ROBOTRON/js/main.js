@@ -40,7 +40,7 @@ const pecas = {
 controle.forEach( (elemento) => {
 elemento.addEventListener("click", (evento)=> {
     manipulaDados(evento.target.textContent, evento.target.parentNode)
-    atualizaEstatisticas(evento.target.dataset.peca)
+    atualizaEstatistica(evento.target.dataset.peca)
     })
 })
     
@@ -65,3 +65,5 @@ function atualizaEstatistica(peca) {
 function trocaImagem(cor){
     document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
  }
+
+ 
