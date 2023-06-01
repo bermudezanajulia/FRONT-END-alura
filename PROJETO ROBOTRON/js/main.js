@@ -54,9 +54,14 @@ function manipulaDados(operacao, controle) {
     }
 }
 
-function atualizaEstatisticas (peca) {
-    console.log(peca[peca])}
+function atualizaEstatistica(peca) {
+    estatistica.forEach( (elemento ) => {
+        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+    })
+}
 
-    controle.forEach(  (elemento) => {
-        console.log(elemento.textContent)
-    } )
+/*troca de cor de robo*/
+
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
+ }

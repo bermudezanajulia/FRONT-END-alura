@@ -33,7 +33,7 @@ main {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
     margin: 0;
-    flex-basis: 40%;
+    flex-basis: 30%;
     position: relative;
 }
 
@@ -41,7 +41,7 @@ main {
     height: 110%;
     z-index: 1;
     position: absolute;
-    left: -20%;
+    left: -5%;
     top: -5%;
 }
 
@@ -61,8 +61,8 @@ main {
 .box {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-    border-left: 5px solid var(--main-cinza);
-    height: 80%;
+    border-left: -2px solid var(--main-cinza);
+    height: 86%;
 }
 
 /****************************** Equipamentos *****/
@@ -230,4 +230,22 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
+}
+
+/*Cores dos robos*/
+
+.alterar {
+    margin: 5px;
+    width: 100px;
+    border-radius: 10px 10px 10px;
+    font-size: 20px;
+    
+}
+
+.botoes {
+   position: relative;
+   top: 600px;
+   right: 5%;
+   display: flex;
+
 }
